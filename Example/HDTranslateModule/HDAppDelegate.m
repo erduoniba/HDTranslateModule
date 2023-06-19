@@ -8,11 +8,38 @@
 
 #import "HDAppDelegate.h"
 
+#import <Photos/Photos.h>
+#import <HDTranslateModule/JDLTTranslateModule.h>
+
 @implementation HDAppDelegate
+
+- (void)logSystemLang {
+    NSArray *languages = [NSLocale preferredLanguages];
+    NSString *systemlanguage = [languages objectAtIndex:0];
+    NSLog(@"systemlanguage: %@", systemlanguage);
+}
+
+- (void)reqPhotoAuthorization {
+    PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
+    if (status == PHAuthorizationStatusNotDetermined) {
+        
+    }
+    
+    [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
+        
+    }];
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [self logSystemLang];
+    
+    [JDLTTranslateModule openAutoTranslate];
+    
+    // 测试info.plist
+//    [self reqPhotoAuthorization];
+    
     return YES;
 }
 

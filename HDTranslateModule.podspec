@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'HDTranslateModule'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of HDTranslateModule.'
+  s.summary          = 'iOS多语言解决方案大全：半自动化+特殊场景手动解决项目中的多语言问题'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,20 +21,15 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/denglibing5/HDTranslateModule'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/erduoniba/HDTranslateModule'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'denglibing5' => 'denglibing3@jd.com' }
-  s.source           = { :git => 'https://github.com/denglibing5/HDTranslateModule.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'denglibing' => '328418417@qq.com' }
+  s.source           = { :git => 'https://github.com/erduoniba/HDTranslateModule.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
-
   s.source_files = 'HDTranslateModule/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'HDTranslateModule' => ['HDTranslateModule/Assets/*.png']
-  # }
+  s.public_header_files="HDTranslateModule/Classes**/*.h"
+  s.resource = "HDTranslateModule/Assets/*"
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

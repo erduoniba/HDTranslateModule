@@ -10,6 +10,10 @@
 #endif
 #endif
 
+#import "JDLTAttributedString.h"
+#import "JDLTTranslateHook.h"
+#import "JDLTTranslateManager.h"
+#import "JDLTTranslateModule.h"
 
 FOUNDATION_EXPORT double HDTranslateModuleVersionNumber;
 FOUNDATION_EXPORT const unsigned char HDTranslateModuleVersionString[];
