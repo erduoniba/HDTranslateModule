@@ -1,0 +1,16 @@
+PODS:
+  - HDTranslateModule (0.1.0)
+
+DEPENDENCIES:
+  - HDTranslateModule (from `../`)
+
+EXTERNAL SOURCES:
+  HDTranslateModule:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HDTranslateModule: 0b994f8365167b7591d0d4c6ef43478ec61f5b6c
+
+PODFILE CHECKSUM: 76d93f8e95593363b0c8329a49c3922dfd551e5f
+
+COCOAPODS: 1.11.3

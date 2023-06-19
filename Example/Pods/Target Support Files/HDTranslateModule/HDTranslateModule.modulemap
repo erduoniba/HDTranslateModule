@@ -1,0 +1,6 @@
+framework module HDTranslateModule {
+  umbrella header "HDTranslateModule-umbrella.h"
+
+  export *
+  module * { export * }
+}

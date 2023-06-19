@@ -1,0 +1,22 @@
+{
+  "name": "HDTranslateModule",
+  "version": "0.1.0",
+  "summary": "A short description of HDTranslateModule.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/denglibing5/HDTranslateModule",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "denglibing5": "denglibing3@jd.com"
+  },
+  "source": {
+    "git": "https://github.com/denglibing5/HDTranslateModule.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "HDTranslateModule/Classes/**/*"
+}
