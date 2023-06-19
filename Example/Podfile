@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'HDTranslateModule_Example' do
+  pod 'HDTranslateModule', :path => '../'
+
+  target 'HDTranslateModule_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
