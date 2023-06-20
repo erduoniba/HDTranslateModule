@@ -24,6 +24,11 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		C32258C35E1794BDF5215EFD /* Pods_HDTranslateModule_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB2FD7C27CB3D916B55E905 /* Pods_HDTranslateModule_Tests.framework */; };
+		D9E434CC2A41CCDC005A694B /* UITextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E434C52A41CCDB005A694B /* UITextViewCell.m */; };
+		D9E434CD2A41CCDC005A694B /* UIButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E434C62A41CCDB005A694B /* UIButtonCell.m */; };
+		D9E434CE2A41CCDC005A694B /* UITextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E434C92A41CCDC005A694B /* UITextFieldCell.m */; };
+		D9E434CF2A41CCDC005A694B /* UILabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E434CB2A41CCDC005A694B /* UILabelCell.m */; };
+		D9E434D22A41D26C005A694B /* HDENViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E434D02A41D26C005A694B /* HDENViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,16 +62,26 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6BBDDC2B551070A65DE6DE68 /* HDTranslateModule.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HDTranslateModule.podspec; path = ../HDTranslateModule.podspec; sourceTree = "<group>"; };
+		6BBDDC2B551070A65DE6DE68 /* HDTranslateModule.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HDTranslateModule.podspec; path = ../HDTranslateModule.podspec; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		767C70C9A11CA7FCCEF88FCE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		767C70C9A11CA7FCCEF88FCE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		84F9A1386DB15F91E4FD0258 /* Pods-HDTranslateModule_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDTranslateModule_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HDTranslateModule_Tests/Pods-HDTranslateModule_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		85C3972A630BCE9551A7D9E6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		85C3972A630BCE9551A7D9E6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B8C56687B09470063925F54A /* Pods-HDTranslateModule_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDTranslateModule_Example.release.xcconfig"; path = "Target Support Files/Pods-HDTranslateModule_Example/Pods-HDTranslateModule_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BC884C9533366CF61BE19D15 /* Pods-HDTranslateModule_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDTranslateModule_Example.debug.xcconfig"; path = "Target Support Files/Pods-HDTranslateModule_Example/Pods-HDTranslateModule_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CFB2FD7C27CB3D916B55E905 /* Pods_HDTranslateModule_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HDTranslateModule_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D22864852C780F2CD2D70ADC /* Pods-HDTranslateModule_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDTranslateModule_Tests.release.xcconfig"; path = "Target Support Files/Pods-HDTranslateModule_Tests/Pods-HDTranslateModule_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D9E434C42A41CCDB005A694B /* UITextViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewCell.h; sourceTree = "<group>"; };
+		D9E434C52A41CCDB005A694B /* UITextViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewCell.m; sourceTree = "<group>"; };
+		D9E434C62A41CCDB005A694B /* UIButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButtonCell.m; sourceTree = "<group>"; };
+		D9E434C72A41CCDB005A694B /* UIButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonCell.h; sourceTree = "<group>"; };
+		D9E434C82A41CCDB005A694B /* UILabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelCell.h; sourceTree = "<group>"; };
+		D9E434C92A41CCDC005A694B /* UITextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldCell.m; sourceTree = "<group>"; };
+		D9E434CA2A41CCDC005A694B /* UITextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldCell.h; sourceTree = "<group>"; };
+		D9E434CB2A41CCDC005A694B /* UILabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelCell.m; sourceTree = "<group>"; };
+		D9E434D02A41D26C005A694B /* HDENViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDENViewController.m; sourceTree = "<group>"; };
+		D9E434D12A41D26C005A694B /* HDENViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDENViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +152,11 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* HDViewController.h */,
 				6003F5A6195388D20070C39A /* HDViewController.m */,
+				D9E434D12A41D26C005A694B /* HDENViewController.h */,
+				D9E434D02A41D26C005A694B /* HDENViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
+				D9E434C32A41CCCC005A694B /* Cells */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for HDTranslateModule";
@@ -185,6 +203,21 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		D9E434C32A41CCCC005A694B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D9E434C72A41CCDB005A694B /* UIButtonCell.h */,
+				D9E434C62A41CCDB005A694B /* UIButtonCell.m */,
+				D9E434C82A41CCDB005A694B /* UILabelCell.h */,
+				D9E434CB2A41CCDC005A694B /* UILabelCell.m */,
+				D9E434CA2A41CCDC005A694B /* UITextFieldCell.h */,
+				D9E434C92A41CCDC005A694B /* UITextFieldCell.m */,
+				D9E434C42A41CCDB005A694B /* UITextViewCell.h */,
+				D9E434C52A41CCDB005A694B /* UITextViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		DD3D17FBF8BA2BDBDD6A4469 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,7 +226,6 @@
 				84F9A1386DB15F91E4FD0258 /* Pods-HDTranslateModule_Tests.debug.xcconfig */,
 				D22864852C780F2CD2D70ADC /* Pods-HDTranslateModule_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +290,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -364,9 +397,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9E434D22A41D26C005A694B /* HDENViewController.m in Sources */,
+				D9E434CD2A41CCDC005A694B /* UIButtonCell.m in Sources */,
+				D9E434CF2A41CCDC005A694B /* UILabelCell.m in Sources */,
 				6003F59E195388D20070C39A /* HDAppDelegate.m in Sources */,
+				D9E434CC2A41CCDC005A694B /* UITextViewCell.m in Sources */,
 				6003F5A7195388D20070C39A /* HDViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				D9E434CE2A41CCDC005A694B /* UITextFieldCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
