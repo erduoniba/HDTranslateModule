@@ -20,6 +20,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)shared;
 
+
+/// 自定义设置本地语言包的资源路径
+/// - Parameters:
+///   - bundle: 语言包所在的bundle
+///   - tableName: 语言包所在的bundle的文件名称
+- (void)customTranslateBundle:(NSBundle *)bundle tableName:(NSString *)tableName;
+
 // 获取用户在App内选中的语言，如果用户未选中默认是System，则使用系统语言
 - (JDLTLanguageMode)selectedLanguage;
 - (void)updateLanguage:(JDLTLanguageMode)mode;

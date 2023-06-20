@@ -9,9 +9,10 @@
 
 @interface JDLTTranslateManager ()
 
-@property (nonatomic, strong) NSBundle *jdltTranslateModuleBundle;
 @property (nonatomic, assign) JDLTLanguageMode selectedLanguage;
+@property (nonatomic, strong) NSBundle *jdltTranslateModuleBundle;
 @property (nonatomic, copy) NSString *lprojPath;
+@property (nonatomic, copy) NSString *tableName;
 
 @end
 
@@ -29,11 +30,22 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"HDTranslateModule" ofType:@"bundle"];
+        NSString *bundlePath = [[NSBundle bundleForClass:self.class] pathForResource:@"HDTranslateModule" ofType:@"bundle"];
+        if (!bundlePath) {
+            bundlePath = [[NSBundle mainBundle] pathForResource:@"HDTranslateModule" ofType:@"bundle"];
+        }
         _jdltTranslateModuleBundle = [NSBundle bundleWithPath:bundlePath];
+        _tableName = @"HDTranslateModule";
         _selectedLanguage = [NSUserDefaults.standardUserDefaults integerForKey:@"JDLTTranslateManager.selectedLanguage"];
     }
     return self;
+}
+
+- (void)customTranslateBundle:(NSBundle *)bundle tableName:(NSString *)tableName {
+    if (bundle) {
+        _jdltTranslateModuleBundle = bundle;
+        _tableName = tableName;
+    }
 }
 
 - (JDLTLanguageMode)selectedLanguage {
@@ -86,7 +98,7 @@
 
 
 + (NSString *)translateText:(NSString *)text {
-    NSString *translate = [[NSBundle bundleWithPath:JDLTTranslateManager.shared.lprojPath] localizedStringForKey:text value:nil table:@"HDTranslateModule"];
+    NSString *translate = [[NSBundle bundleWithPath:JDLTTranslateManager.shared.lprojPath] localizedStringForKey:text value:nil table:JDLTTranslateManager.shared.tableName];
 //    NSLog(@"translate: %@", translate);
     return translate;
 }
