@@ -1857,7 +1857,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-## 五、效果展示
+## 五、示例效果
+
+本文中提到的脚本、国际化API的AOP功能以及相应的示例代码已经开源。请访问 [HDTranslateModule](https://github.com/erduoniba/HDTranslateModule) 了解更多。如有疑问或在使用过程中遇到问题，请在 [issues](https://github.com/erduoniba/HDTranslateModule/issues) 中提出。
 
 ![](./Assets/effect.gif)
 
@@ -1879,3 +1881,4 @@ NS_ASSUME_NONNULL_BEGIN
 
 [Google Clound Console](https://console.cloud.google.com/)
 
+[github-copilot](https://docs.github.com/en/copilot/getting-started-with-github-copilot)
