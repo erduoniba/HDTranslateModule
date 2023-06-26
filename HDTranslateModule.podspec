@@ -27,7 +27,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/erduoniba/HDTranslateModule.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
-  s.source_files = 'HDTranslateModule/Classes/**/*'
+  s.source_files = 'HDTranslateModule/Classes/**/*.{h,m,py}'
   s.public_header_files="HDTranslateModule/Classes**/*.h"
   s.resource = "HDTranslateModule/Assets/*"
 

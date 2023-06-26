@@ -29,6 +29,7 @@
 		D9E434CE2A41CCDC005A694B /* UITextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E434C92A41CCDC005A694B /* UITextFieldCell.m */; };
 		D9E434CF2A41CCDC005A694B /* UILabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E434CB2A41CCDC005A694B /* UILabelCell.m */; };
 		D9E434D22A41D26C005A694B /* HDENViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E434D02A41D26C005A694B /* HDENViewController.m */; };
+		D9E434D52A41D58D005A694B /* HDExampleSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E434D42A41D58D005A694B /* HDExampleSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,11 @@
 		D9E434CB2A41CCDC005A694B /* UILabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelCell.m; sourceTree = "<group>"; };
 		D9E434D02A41D26C005A694B /* HDENViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDENViewController.m; sourceTree = "<group>"; };
 		D9E434D12A41D26C005A694B /* HDENViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDENViewController.h; sourceTree = "<group>"; };
+		D9E434D32A41D58B005A694B /* HDTranslateModule_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HDTranslateModule_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		D9E434D42A41D58D005A694B /* HDExampleSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDExampleSwift.swift; sourceTree = "<group>"; };
+		D9FB6C312A49247C00C28983 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		D9FB6C332A49266200C28983 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		D9FB6C342A49273E00C28983 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,10 +160,12 @@
 				6003F5A6195388D20070C39A /* HDViewController.m */,
 				D9E434D12A41D26C005A694B /* HDENViewController.h */,
 				D9E434D02A41D26C005A694B /* HDENViewController.m */,
+				D9E434D42A41D58D005A694B /* HDExampleSwift.swift */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				D9E434C32A41CCCC005A694B /* Cells */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				D9E434D32A41D58B005A694B /* HDTranslateModule_Example-Bridging-Header.h */,
 			);
 			name = "Example for HDTranslateModule";
 			path = HDTranslateModule;
@@ -280,6 +288,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = denglibing5;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						LastSwiftMigration = 1420;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -293,6 +304,7 @@
 				English,
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 6003F581195388D10070C39A;
 			productRefGroup = 6003F58B195388D20070C39A /* Products */;
@@ -397,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9E434D52A41D58D005A694B /* HDExampleSwift.swift in Sources */,
 				D9E434D22A41D26C005A694B /* HDENViewController.m in Sources */,
 				D9E434CD2A41CCDC005A694B /* UIButtonCell.m in Sources */,
 				D9E434CF2A41CCDC005A694B /* UILabelCell.m in Sources */,
@@ -431,6 +444,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6003F597195388D20070C39A /* en */,
+				D9FB6C342A49273E00C28983 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -447,6 +461,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				71719F9E1E33DC2100824A3D /* Base */,
+				D9FB6C312A49247C00C28983 /* zh-Hans */,
+				D9FB6C332A49266200C28983 /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -532,12 +548,16 @@
 			baseConfigurationReference = BC884C9533366CF61BE19D15 /* Pods-HDTranslateModule_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HDTranslateModule/HDTranslateModule-Prefix.pch";
 				INFOPLIST_FILE = "HDTranslateModule/HDTranslateModule-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HDTranslateModule/HDTranslateModule_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -548,12 +568,15 @@
 			baseConfigurationReference = B8C56687B09470063925F54A /* Pods-HDTranslateModule_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HDTranslateModule/HDTranslateModule-Prefix.pch";
 				INFOPLIST_FILE = "HDTranslateModule/HDTranslateModule-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HDTranslateModule/HDTranslateModule_Example-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -563,6 +586,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84F9A1386DB15F91E4FD0258 /* Pods-HDTranslateModule_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -588,6 +612,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D22864852C780F2CD2D70ADC /* Pods-HDTranslateModule_Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",

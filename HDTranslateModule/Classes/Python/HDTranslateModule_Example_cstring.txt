@@ -1,0 +1,53 @@
+systemlanguage: %@
+v16@?0q8
+UITableViewCell
+UILabelCell
+UIButtonCell
+UIButtonCell2
+UITextViewCell
+UITextViewCell2
+UITextFieldCell
+UITextFieldCell2
+UILable.text Case
+UILable.attributedText Case
+UIButton.setTitle Case
+UIButton.setAttributedTitle Case
+UITextView.text Case
+UITextView.attributedText Case
+UITextField.text Case
+UITextField.attributedText Case
+v32@?0@"UITabBarItem"8Q16^B24
+UILable.text
+%d
+%@
+UILable.attributedText
+UIButton.setTitle
+UIButton.setAttributedTitle
+UITextView.text
+UITextView.attributedText
+UITextField.text
+UITextField.attributedText
+
+hello
+Swift \37777777744\37777777670\37777777655
+Swift En
+\37777777746\37777777630\37777777657\37777777744\37777777670\37777777672 \37777777744\37777777670\37777777655
+Hello
+\37777777744\37777777675\37777777640\37777777745\37777777645\37777777675
+Hello \37777777744\37777777675\37777777640\37777777745\37777777645\37777777675
+
+
+_TtC25HDTranslateModule_Example9HDExample
+v16@0:8
+@16@0:8
+value
+
+\n
+ 
+__TEXT
+swift_getObjCClassMetadata
+_TtCs12_SwiftObject
+swift_getTypeContextDescriptor
+swift_getExistentialTypeMetadata
+objc_addLoadImageFunc
+__swift5_proto

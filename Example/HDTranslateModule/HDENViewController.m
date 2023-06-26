@@ -23,7 +23,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    self.title = NSLocalizedString(@"英文", nil) ;
+    self.title = @"英文";
 }
 
 @end

@@ -1,0 +1,9 @@
+"英文" = "English";
+"弹窗组件页面" = "Popup component page";
+"分类缓存是时间阀值：%d，当前缓存时间：%d" = "Category cache is time threshold: %d, current cache time: %d";
+"更新资质合规：%@" = "Update qualification compliance: %@";
+"我是服务器数据" = "i am server data";
+"第%d张图片不符合规范，请替换或删除后重新上传" = "The %d image does not meet the specifications, please replace or delete it and upload it again";
+"订单编号：%@" = "Order number: %@";
+"中文" = "Chinese";
+"我也是服务器数据" = "I am also server data";

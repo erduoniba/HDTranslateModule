@@ -1,2 +1,5 @@
 /* Localized versions of Info.plist keys */
 
+CFBundleDisplayName="HDTranslate";
+
+NSPhotoLibraryUsageDescription="Needs access to your camera to take you to experience code scanning, shooting, red envelope scanning, reality shopping, etc";

@@ -61,6 +61,11 @@
 - (void)reloadDatas {
     [_dataArray removeAllObjects];
     
+    UILabel *label = [[UILabel alloc] init];
+    NSString *str = @"Hello, World!";
+    label.text = str;
+    
+    
     NSMutableArray *rowDatas = [@[] mutableCopy];
     // case1：直接显示文字
     [rowDatas addObject:@"弹窗组件页面"];
@@ -72,6 +77,7 @@
     [rowDatas addObject:@"第%d张图片不符合规范，请替换或删除后重新上传"];
     // case5：文字中包含转译符 %@，转译符号在 setText 使用真实值
     [rowDatas addObject:@"订单编号：%@"];
+    [rowDatas addObject:@"I am Harry：%@"];
     // ⚠️⚠️⚠️  带有转译符号的，需要先使用 Format 处理然后再调用 setText
     NSDictionary *section = @{
         @"UILable.text Case": rowDatas

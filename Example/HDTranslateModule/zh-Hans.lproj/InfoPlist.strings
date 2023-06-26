@@ -1,0 +1,6 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleDisplayName="HD多语言";
+
+NSPhotoLibraryUsageDescription="需要访问您的相册，带您体验扫码、拍摄、扫红包、实景购物等";
+

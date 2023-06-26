@@ -18,7 +18,7 @@
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "HDTranslateModule/Classes/**/*",
+  "source_files": "HDTranslateModule/Classes/**/*.{h,m,py}",
   "public_header_files": "HDTranslateModule/Classes**/*.h",
   "resources": "HDTranslateModule/Assets/*"
 }
