@@ -10,6 +10,7 @@
 
 #import <Photos/Photos.h>
 #import <HDTranslateModule/JDLTTranslateModule.h>
+#import <HDTranslateModule/JDLTTranslateManager.h>
 
 @implementation HDAppDelegate
 
@@ -36,6 +37,10 @@
     [self logSystemLang];
     
     [JDLTTranslateModule openAutoTranslate];
+    
+    NSString *bundlePath = [NSBundle.mainBundle pathForResource:@"HDTranslateDemo" ofType:@"bundle"];
+    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+    [JDLTTranslateManager.shared customTranslateBundle:bundle tableName:@"HDTranslateModule"];
     
     // 测试info.plist
     [self reqPhotoAuthorization];

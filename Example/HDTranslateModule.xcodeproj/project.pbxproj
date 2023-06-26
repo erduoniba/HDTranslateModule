@@ -30,6 +30,7 @@
 		D9E434CF2A41CCDC005A694B /* UILabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E434CB2A41CCDC005A694B /* UILabelCell.m */; };
 		D9E434D22A41D26C005A694B /* HDENViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E434D02A41D26C005A694B /* HDENViewController.m */; };
 		D9E434D52A41D58D005A694B /* HDExampleSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E434D42A41D58D005A694B /* HDExampleSwift.swift */; };
+		D9FB6C362A497A2600C28983 /* HDTranslateDemo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D9FB6C352A497A2500C28983 /* HDTranslateDemo.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		D9FB6C312A49247C00C28983 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		D9FB6C332A49266200C28983 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		D9FB6C342A49273E00C28983 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		D9FB6C352A497A2500C28983 /* HDTranslateDemo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HDTranslateDemo.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		6003F593195388D20070C39A /* Example for HDTranslateModule */ = {
 			isa = PBXGroup;
 			children = (
+				D9FB6C352A497A2500C28983 /* HDTranslateDemo.bundle */,
 				6003F59C195388D20070C39A /* HDAppDelegate.h */,
 				6003F59D195388D20070C39A /* HDAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -324,6 +327,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				D9FB6C362A497A2600C28983 /* HDTranslateDemo.bundle in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
