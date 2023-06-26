@@ -38,7 +38,7 @@
     [JDLTTranslateModule openAutoTranslate];
     
     // 测试info.plist
-//    [self reqPhotoAuthorization];
+    [self reqPhotoAuthorization];
     
     return YES;
 }

@@ -1857,7 +1857,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-## 五、参考资料
+## 五、效果展示
+
+![](./Assets/effect.gif)
+
+
+
+## 六、参考资料
 
 [iOS开发 国际化/多语言适配](https://blog.csdn.net/weixin_38934440/article/details/122170848)
 
