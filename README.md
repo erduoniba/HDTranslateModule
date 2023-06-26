@@ -1873,6 +1873,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 [iOS文本的多语言适配和实践](https://juejin.cn/post/7007625383499530253) 
 
+[iOS CocoaPods 子模块实现多语言](https://cloud.tencent.com/developer/article/1753683?cps_key=1d358d18a7a17b4a6df8d67a62fd3d3d)
+
 [Mach-O学习](https://elliotsomething.github.io/2017/06/01/Mach-O%E5%AD%A6%E4%B9%A0/)
 
 [HiBox](http://doc.jd.com/szfe/hibox/) 
@@ -1882,3 +1884,6 @@ NS_ASSUME_NONNULL_BEGIN
 [Google Clound Console](https://console.cloud.google.com/)
 
 [github-copilot](https://docs.github.com/en/copilot/getting-started-with-github-copilot)
+
+[Google机器翻译](https://developers.google.com/ml-kit/language/translation?hl=zh-cn)
+
