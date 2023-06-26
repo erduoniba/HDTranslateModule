@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## HDTranslateModule
 
-Copyright (c) 2023 denglibing5 <denglibing3@jd.com>
+Copyright (c) 2023 denglibing <328418417@qq.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
