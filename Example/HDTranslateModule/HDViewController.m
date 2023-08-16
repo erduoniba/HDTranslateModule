@@ -16,7 +16,7 @@
 #import "UITextViewCell.h"
 #import "UITextFieldCell.h"
 
-@interface HDViewController ()
+@interface HDViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *languageSegment;
