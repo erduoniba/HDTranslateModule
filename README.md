@@ -1251,9 +1251,9 @@ def write_final_ustring_local_file(file_final_path, all_strings, all_translate_s
 
 在前面的文案收集和文案翻译自动化基础上，我提供了一个完整的自动化收集翻译脚本及代码注释。以下是脚本的详细内容及使用说明
 
-#### 3.1、处理 __ustring 节数据
+#### 3.1、处理 __cstring 节数据
 
-`__ustring` 节是用于存储 Unicode 字符串的数据段。为了实现中文字符串的查找、收集和翻译自动化，我们可以编写一个名为 **find_chinese_ustrings.py** 的脚本。以下是一个完整的实现示例：
+`__cstring` 节是用于存储 C 风格字符串的数据段。为了实现中文字符串的查找、收集和翻译自动化，我们可以编写一个名为 **find_chinese_cstrings.py** 的脚本。以下是一个简单的实现示例：
 
 ```python
 import re
@@ -1522,9 +1522,9 @@ find_chinese_ustrings.py # 处理 __ustring 节中的中文字符串的脚本
 
 
 
-#### 3.2、处理 __cstring 节数据
+#### 3.2、处理 __ustring 节数据
 
-`__cstring` 节是用于存储 C 风格字符串的数据段。为了实现中文字符串的查找、收集和翻译自动化，我们可以编写一个名为 **find_chinese_cstrings.py** 的脚本。以下是一个简单的实现示例：
+`__ustring` 节是用于存储 Unicode 字符串的数据段。为了实现中文字符串的查找、收集和翻译自动化，我们可以编写一个名为 **find_chinese_ustrings.py** 的脚本。以下是一个完整的实现示例：
 
 ```python
 import sys

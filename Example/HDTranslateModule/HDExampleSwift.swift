@@ -25,5 +25,8 @@ import UIKit
         
         let label3 = UILabel()
         label3.text = "Hello 你好"
+        
+        debugPrint("L10n.Localizable.hello:\(L10n.Localizabless.hello)")
+        debugPrint("L10n.Localizable.good:\(L10n.Localizabless.good)")
     }
 }

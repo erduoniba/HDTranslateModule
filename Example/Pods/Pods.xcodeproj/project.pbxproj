@@ -6,18 +6,33 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		1E798429DCFA7906F6625CCFC1088744 /* SwiftGen */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FB296D1C543ACA89207838196BB823E7 /* Build configuration list for PBXAggregateTarget "SwiftGen" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftGen;
+			productName = SwiftGen;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		01A310BC97FF2EBD9625D9A9E456FEA7 /* JDLTTranslateHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D99493889D07A1730E95005C39B56F /* JDLTTranslateHook.m */; };
 		0C4196BB455C5FFE4B9F186153A0AD1B /* JDLTTranslateHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A7FF3B35362241A9C121DA37AEF1D82 /* JDLTTranslateHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CAF15D4C0E243D94E0DDEDF7C6F3E04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		1194527FE9323B32F0D1684A299E32A7 /* JDLTAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 199AD292324677DFD80EC43E5FAABA14 /* JDLTAttributedString.m */; };
 		1B2CD7C64B304DB757ABAB60D9C5FB0C /* JDLTAttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = 908DA6F3E45CD2FB21608173CF75256D /* JDLTAttributedString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F88577BF2A6D8B0B94714BFFCA96F67 /* HDTranslateModule.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6405F0D96226DEE056984A6BC756674E /* HDTranslateModule.bundle */; };
+		25610722D72C3B8DD5ABFBE1B2CFF71E /* Pods-HDTranslateModule_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B0B25559F8E34A4E97B39C7B944573 /* Pods-HDTranslateModule_Example-dummy.m */; };
 		37DA4494E0A1DE668261C711466F434B /* find_chinese_cstrings.py in Sources */ = {isa = PBXBuildFile; fileRef = 876BA8FC19B3B3A4351728B790FF9FF9 /* find_chinese_cstrings.py */; };
 		4E2497D89DA78CB069943593F2FD656A /* JDLTTranslateModule.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1D0A6A6AF2E5C714DBBE6AD8284F81 /* JDLTTranslateModule.m */; };
 		5443244783CCCD6BA97944B60A70CFEE /* JDLTTranslateModule.h in Headers */ = {isa = PBXBuildFile; fileRef = D6DC3801049CAEC08FF37DBC3B8DB491 /* JDLTTranslateModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5EC02EE448D6268E7161B26248AA525D /* find_chinese_ustrings.py in Sources */ = {isa = PBXBuildFile; fileRef = A1C1E898D7C3DA0B7C8E39E410B9E614 /* find_chinese_ustrings.py */; };
 		8FB1CC8BFA2F1CA5736A70633FBD5E68 /* JDLTTranslateManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E111084322FA185C774F221242963524 /* JDLTTranslateManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		96E875335A8A71106B4687A5C5F501DF /* Pods-HDTranslateModule_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B0B25559F8E34A4E97B39C7B944573 /* Pods-HDTranslateModule_Example-dummy.m */; };
+		9511468CA002713CD789F7CF1FA5C22C /* Pods-HDTranslateModule_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA817BB34C66760CA21E0D59E4B9EA62 /* Pods-HDTranslateModule_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A595C3DEA0029985C751DBEF4FA085F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		AEE783B8E4ED0C3AA276AD49B6A4DAD7 /* Pods-HDTranslateModule_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E2393D2190B66DEDE6F61EB63ACC91 /* Pods-HDTranslateModule_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B796AFCA4AB3C14E693B232A5BD47776 /* HDTranslateModule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3A94EE88FDEF13F81D7D5A1F5591596 /* HDTranslateModule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,24 +40,29 @@
 		C78CA30D04ECFC1EC9D04A89A9014492 /* JDLTTranslateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0F1D512D13AE2DDE54FFCC361E244B /* JDLTTranslateManager.m */; };
 		D6A3B4449ADE79210E1DA5F34550E488 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		D6C315A037FE0B5BE7DFB1388A3E1073 /* Pods-HDTranslateModule_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E769C0A42C1B6869AF10A0C145C6B6 /* Pods-HDTranslateModule_Tests-dummy.m */; };
-		E2EF020143C596C37499A5E23A59A399 /* Pods-HDTranslateModule_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA817BB34C66760CA21E0D59E4B9EA62 /* Pods-HDTranslateModule_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7A14BAECBC5072059F3FB429D84079A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6737E47053DE687052F463D85F185702 /* PBXContainerItemProxy */ = {
+		5C3131C725B47F25586FC461F68B8D87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4582ED86823FF1DA1F7BF71E95363AE8;
+			remoteInfo = HDTranslateModule;
+		};
+		8D12463A6873C10C9D76DD507073E8D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F1E034CA05FB194724C9E5471082F0E1;
 			remoteInfo = "Pods-HDTranslateModule_Example";
 		};
-		BE1CAA22A317F34AF691CA5FA6C80DC3 /* PBXContainerItemProxy */ = {
+		D1A07EC06B52614BE6EDCAACBA7F360C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4582ED86823FF1DA1F7BF71E95363AE8;
-			remoteInfo = HDTranslateModule;
+			remoteGlobalIDString = 1E798429DCFA7906F6625CCFC1088744;
+			remoteInfo = SwiftGen;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -56,27 +76,28 @@
 		20B24162C0FD7D0F93C96472D0D250FF /* HDTranslateModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HDTranslateModule.release.xcconfig; sourceTree = "<group>"; };
 		22E769C0A42C1B6869AF10A0C145C6B6 /* Pods-HDTranslateModule_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HDTranslateModule_Tests-dummy.m"; sourceTree = "<group>"; };
 		22F7B5667A9AABAFA317988A0273CDC4 /* Pods-HDTranslateModule_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HDTranslateModule_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		243CBC90EBDF64695DC43F4241844284 /* HDTranslateModule.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HDTranslateModule.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		243CBC90EBDF64695DC43F4241844284 /* HDTranslateModule.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = HDTranslateModule.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		47B0B25559F8E34A4E97B39C7B944573 /* Pods-HDTranslateModule_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HDTranslateModule_Example-dummy.m"; sourceTree = "<group>"; };
 		4A7FF3B35362241A9C121DA37AEF1D82 /* JDLTTranslateHook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JDLTTranslateHook.h; path = HDTranslateModule/Classes/JDLTTranslateHook.h; sourceTree = "<group>"; };
 		4E8BD60F7E69F40D78984E60AA397EC8 /* HDTranslateModule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HDTranslateModule-dummy.m"; sourceTree = "<group>"; };
 		5464CBDE45C56F5D7A4E0F2156DE6C1A /* HDTranslateModule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HDTranslateModule.modulemap; sourceTree = "<group>"; };
 		5AEABB6F463028FC8534F3404AB9C238 /* Pods-HDTranslateModule_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HDTranslateModule_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		5F8E042D204712D1275DF9D800616A50 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5F8E042D204712D1275DF9D800616A50 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		6405F0D96226DEE056984A6BC756674E /* HDTranslateModule.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = HDTranslateModule.bundle; path = HDTranslateModule/Assets/HDTranslateModule.bundle; sourceTree = "<group>"; };
 		71D810CC35B165C69E290EDFBC8C6084 /* Pods-HDTranslateModule_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-HDTranslateModule_Example"; path = Pods_HDTranslateModule_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		79318D1DA1515436DC2A8594289B7E08 /* HDTranslateModule */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HDTranslateModule; path = HDTranslateModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		876BA8FC19B3B3A4351728B790FF9FF9 /* find_chinese_cstrings.py */ = {isa = PBXFileReference; includeInIndex = 1; path = find_chinese_cstrings.py; sourceTree = "<group>"; };
+		876BA8FC19B3B3A4351728B790FF9FF9 /* find_chinese_cstrings.py */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.python; path = find_chinese_cstrings.py; sourceTree = "<group>"; };
 		908DA6F3E45CD2FB21608173CF75256D /* JDLTAttributedString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JDLTAttributedString.h; path = HDTranslateModule/Classes/JDLTAttributedString.h; sourceTree = "<group>"; };
 		93611DB69F263CEF0E5AC13B1EB74DCA /* Pods-HDTranslateModule_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HDTranslateModule_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1C1E898D7C3DA0B7C8E39E410B9E614 /* find_chinese_ustrings.py */ = {isa = PBXFileReference; includeInIndex = 1; path = find_chinese_ustrings.py; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1C1E898D7C3DA0B7C8E39E410B9E614 /* find_chinese_ustrings.py */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.python; path = find_chinese_ustrings.py; sourceTree = "<group>"; };
 		A2ADAEB10561D453645558591CCF12A9 /* Pods-HDTranslateModule_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HDTranslateModule_Example-frameworks.sh"; sourceTree = "<group>"; };
 		ACCA4E53EFB1FA2B0C98F9FDEB528A28 /* Pods-HDTranslateModule_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HDTranslateModule_Tests.modulemap"; sourceTree = "<group>"; };
 		AE93E7CB161B38D95A483A63FC924292 /* HDTranslateModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HDTranslateModule.debug.xcconfig; sourceTree = "<group>"; };
+		B4263489E673801EC37C1F15D4E531D8 /* SwiftGen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftGen.release.xcconfig; sourceTree = "<group>"; };
 		B69FAF58EE5C358E978F980BFB8D8DB8 /* Pods-HDTranslateModule_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HDTranslateModule_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		BD5419D68F561727F3A0FE45DCA458B8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		BD5419D68F561727F3A0FE45DCA458B8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C3A94EE88FDEF13F81D7D5A1F5591596 /* HDTranslateModule-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HDTranslateModule-umbrella.h"; sourceTree = "<group>"; };
 		C60BBB279768209678C5E1334E53C790 /* HDTranslateModule-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HDTranslateModule-prefix.pch"; sourceTree = "<group>"; };
 		CA817BB34C66760CA21E0D59E4B9EA62 /* Pods-HDTranslateModule_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HDTranslateModule_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -90,6 +111,7 @@
 		EDB17370F5A726AD716DB99D3A7AE68C /* Pods-HDTranslateModule_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HDTranslateModule_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FBB4FB7EF95C60CCEFD66D559272116E /* HDTranslateModule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HDTranslateModule-Info.plist"; sourceTree = "<group>"; };
 		FBDB61EA4DAC38C3E4C253AF6A61DB89 /* Pods-HDTranslateModule_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HDTranslateModule_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FD691AE7128F940D3B179941FCEC2F54 /* SwiftGen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftGen.debug.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,17 +131,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFD26A37158BA030CB44F2072DE451DE /* Frameworks */ = {
+		CEC1494DD1FCFDD48721CB248EF68527 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7A14BAECBC5072059F3FB429D84079A /* Foundation.framework in Frameworks */,
+				0CAF15D4C0E243D94E0DDEDF7C6F3E04 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08DF4A29620F30ECCD85AE71F22FD52C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				878C176E7A3E3DF8BAB24F0858DEDDDD /* SwiftGen */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +205,14 @@
 			path = HDTranslateModule/Classes/Python;
 			sourceTree = "<group>";
 		};
+		878C176E7A3E3DF8BAB24F0858DEDDDD /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				AB4F699EB2CE4C63CBA1FEFDD0861DAA /* Support Files */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
 		87F234A56519FF0702DB9E59AA3D006A /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +262,16 @@
 			path = "Example/Pods/Target Support Files/HDTranslateModule";
 			sourceTree = "<group>";
 		};
+		AB4F699EB2CE4C63CBA1FEFDD0861DAA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD691AE7128F940D3B179941FCEC2F54 /* SwiftGen.debug.xcconfig */,
+				B4263489E673801EC37C1F15D4E531D8 /* SwiftGen.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftGen";
+			sourceTree = "<group>";
+		};
 		B3EA743F2EE0CB5D765A1859B8508332 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +297,7 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				92E40DCBA354D00FE61AAC1371E107EE /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				08DF4A29620F30ECCD85AE71F22FD52C /* Pods */,
 				87F234A56519FF0702DB9E59AA3D006A /* Products */,
 				B3EA743F2EE0CB5D765A1859B8508332 /* Targets Support Files */,
 			);
@@ -277,11 +326,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BD4A6DCCC6984F9A35E1631457FD110 /* Headers */ = {
+		19DBC905821B4941F5B5F9EF89C94B15 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2EF020143C596C37499A5E23A59A399 /* Pods-HDTranslateModule_Example-umbrella.h in Headers */,
+				9511468CA002713CD789F7CF1FA5C22C /* Pods-HDTranslateModule_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +375,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A615CFACB9FCCEB2B395F26A42242D76 /* PBXTargetDependency */,
+				C00EF9C07104F9D635804CDFF5758140 /* PBXTargetDependency */,
 			);
 			name = "Pods-HDTranslateModule_Tests";
 			productName = Pods_HDTranslateModule_Tests;
@@ -335,17 +384,18 @@
 		};
 		F1E034CA05FB194724C9E5471082F0E1 /* Pods-HDTranslateModule_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 61647F52BC0F53911864B54160A41B46 /* Build configuration list for PBXNativeTarget "Pods-HDTranslateModule_Example" */;
+			buildConfigurationList = 0000EA94BBE0C25BC91C62236FF23BF5 /* Build configuration list for PBXNativeTarget "Pods-HDTranslateModule_Example" */;
 			buildPhases = (
-				4BD4A6DCCC6984F9A35E1631457FD110 /* Headers */,
-				2A1E4234A4B09EEA4ABEFA0F5D44D8C1 /* Sources */,
-				BFD26A37158BA030CB44F2072DE451DE /* Frameworks */,
-				22F8C68A7943DB22E50A633395C3DA38 /* Resources */,
+				19DBC905821B4941F5B5F9EF89C94B15 /* Headers */,
+				CDD1A5D85BE8BA088C49EBD3CBFCA1BC /* Sources */,
+				CEC1494DD1FCFDD48721CB248EF68527 /* Frameworks */,
+				0D9F00A48E55AB82E95203D694239AE5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7642421C2AC890BC9AE362E6F9A286F8 /* PBXTargetDependency */,
+				DF27DDA4D52624B47E0A8B00597FD8FF /* PBXTargetDependency */,
+				8C11AE0D76D268DF3CFFE62478A30FD9 /* PBXTargetDependency */,
 			);
 			name = "Pods-HDTranslateModule_Example";
 			productName = Pods_HDTranslateModule_Example;
@@ -377,12 +427,13 @@
 				4582ED86823FF1DA1F7BF71E95363AE8 /* HDTranslateModule */,
 				F1E034CA05FB194724C9E5471082F0E1 /* Pods-HDTranslateModule_Example */,
 				B2DEFE818F9807CE337BC57CF302ACAE /* Pods-HDTranslateModule_Tests */,
+				1E798429DCFA7906F6625CCFC1088744 /* SwiftGen */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		22F8C68A7943DB22E50A633395C3DA38 /* Resources */ = {
+		0D9F00A48E55AB82E95203D694239AE5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -407,14 +458,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2A1E4234A4B09EEA4ABEFA0F5D44D8C1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				96E875335A8A71106B4687A5C5F501DF /* Pods-HDTranslateModule_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		411869F986F8862FCCF16E0033380C88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -437,24 +480,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CDD1A5D85BE8BA088C49EBD3CBFCA1BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25610722D72C3B8DD5ABFBE1B2CFF71E /* Pods-HDTranslateModule_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7642421C2AC890BC9AE362E6F9A286F8 /* PBXTargetDependency */ = {
+		8C11AE0D76D268DF3CFFE62478A30FD9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = HDTranslateModule;
-			target = 4582ED86823FF1DA1F7BF71E95363AE8 /* HDTranslateModule */;
-			targetProxy = BE1CAA22A317F34AF691CA5FA6C80DC3 /* PBXContainerItemProxy */;
+			name = SwiftGen;
+			target = 1E798429DCFA7906F6625CCFC1088744 /* SwiftGen */;
+			targetProxy = D1A07EC06B52614BE6EDCAACBA7F360C /* PBXContainerItemProxy */;
 		};
-		A615CFACB9FCCEB2B395F26A42242D76 /* PBXTargetDependency */ = {
+		C00EF9C07104F9D635804CDFF5758140 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-HDTranslateModule_Example";
 			target = F1E034CA05FB194724C9E5471082F0E1 /* Pods-HDTranslateModule_Example */;
-			targetProxy = 6737E47053DE687052F463D85F185702 /* PBXContainerItemProxy */;
+			targetProxy = 8D12463A6873C10C9D76DD507073E8D0 /* PBXContainerItemProxy */;
+		};
+		DF27DDA4D52624B47E0A8B00597FD8FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HDTranslateModule;
+			target = 4582ED86823FF1DA1F7BF71E95363AE8 /* HDTranslateModule */;
+			targetProxy = 5C3131C725B47F25586FC461F68B8D87 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		2202230BF25CAB2FDC609A71D79055BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD691AE7128F940D3B179941FCEC2F54 /* SwiftGen.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		362BDC490DE5EC10F38CEFAEC18060AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 22F7B5667A9AABAFA317988A0273CDC4 /* Pods-HDTranslateModule_Tests.release.xcconfig */;
@@ -520,40 +590,7 @@
 			};
 			name = Debug;
 		};
-		4C5F73D4FF5C5470FB63EC4842D114AF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B69FAF58EE5C358E978F980BFB8D8DB8 /* Pods-HDTranslateModule_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HDTranslateModule_Example/Pods-HDTranslateModule_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HDTranslateModule_Example/Pods-HDTranslateModule_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5B19A2C9D1B68815996CF59089A5138E /* Release */ = {
+		69B25DE37F9DFAAEF919CD0C32FBFF87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EDB17370F5A726AD716DB99D3A7AE68C /* Pods-HDTranslateModule_Example.release.xcconfig */;
 			buildSettings = {
@@ -642,8 +679,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -678,6 +714,20 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CF3B4AB84D0F77E437676BAFB9C2086C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4263489E673801EC37C1F15D4E531D8 /* SwiftGen.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -747,6 +797,39 @@
 			};
 			name = Debug;
 		};
+		DC7C2C7F61A2DE4692FE5EEF498E3514 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B69FAF58EE5C358E978F980BFB8D8DB8 /* Pods-HDTranslateModule_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HDTranslateModule_Example/Pods-HDTranslateModule_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HDTranslateModule_Example/Pods-HDTranslateModule_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		FF3D844CC28CEC5EFC32B45C0F645C82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15C0E66CBCCDB68C81B44DAD31D3364C /* Pods-HDTranslateModule_Tests.debug.xcconfig */;
@@ -783,6 +866,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0000EA94BBE0C25BC91C62236FF23BF5 /* Build configuration list for PBXNativeTarget "Pods-HDTranslateModule_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC7C2C7F61A2DE4692FE5EEF498E3514 /* Debug */,
+				69B25DE37F9DFAAEF919CD0C32FBFF87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3143026EBC4C1C15D544D0DE0AE9DF73 /* Build configuration list for PBXNativeTarget "HDTranslateModule" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -801,20 +893,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		61647F52BC0F53911864B54160A41B46 /* Build configuration list for PBXNativeTarget "Pods-HDTranslateModule_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4C5F73D4FF5C5470FB63EC4842D114AF /* Debug */,
-				5B19A2C9D1B68815996CF59089A5138E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		9F2A4391914383DCAA6E18A6EBA759B9 /* Build configuration list for PBXNativeTarget "Pods-HDTranslateModule_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF3D844CC28CEC5EFC32B45C0F645C82 /* Debug */,
 				362BDC490DE5EC10F38CEFAEC18060AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB296D1C543ACA89207838196BB823E7 /* Build configuration list for PBXAggregateTarget "SwiftGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2202230BF25CAB2FDC609A71D79055BB /* Debug */,
+				CF3B4AB84D0F77E437676BAFB9C2086C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

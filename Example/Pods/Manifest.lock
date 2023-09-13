@@ -1,8 +1,14 @@
 PODS:
   - HDTranslateModule (0.1.0)
+  - SwiftGen (6.6.2)
 
 DEPENDENCIES:
   - HDTranslateModule (from `../`)
+  - SwiftGen (~> 6.0)
+
+SPEC REPOS:
+  trunk:
+    - SwiftGen
 
 EXTERNAL SOURCES:
   HDTranslateModule:
@@ -10,7 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   HDTranslateModule: f5d428c84c75be4cc0c9440b8d23d832feec41da
+  SwiftGen: 1366a7f71aeef49954ca5a63ba4bef6b0f24138c
 
-PODFILE CHECKSUM: 76d93f8e95593363b0c8329a49c3922dfd551e5f
+PODFILE CHECKSUM: 1754188ee48cc9b8d6c53ac0b7b6a3d3697da986
 
 COCOAPODS: 1.11.3

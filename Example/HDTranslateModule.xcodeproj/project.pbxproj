@@ -24,6 +24,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		C32258C35E1794BDF5215EFD /* Pods_HDTranslateModule_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB2FD7C27CB3D916B55E905 /* Pods_HDTranslateModule_Tests.framework */; };
+		D97C54802A8CBFB600A1C17C /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97C547F2A8CBFB600A1C17C /* Strings+Generated.swift */; };
 		D9E434CC2A41CCDC005A694B /* UITextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E434C52A41CCDB005A694B /* UITextViewCell.m */; };
 		D9E434CD2A41CCDC005A694B /* UIButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E434C62A41CCDB005A694B /* UIButtonCell.m */; };
 		D9E434CE2A41CCDC005A694B /* UITextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E434C92A41CCDC005A694B /* UITextFieldCell.m */; };
@@ -74,6 +75,9 @@
 		BC884C9533366CF61BE19D15 /* Pods-HDTranslateModule_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDTranslateModule_Example.debug.xcconfig"; path = "Target Support Files/Pods-HDTranslateModule_Example/Pods-HDTranslateModule_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CFB2FD7C27CB3D916B55E905 /* Pods_HDTranslateModule_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HDTranslateModule_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D22864852C780F2CD2D70ADC /* Pods-HDTranslateModule_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDTranslateModule_Tests.release.xcconfig"; path = "Target Support Files/Pods-HDTranslateModule_Tests/Pods-HDTranslateModule_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D97C547C2A8CBE9500A1C17C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizabless.strings"; sourceTree = "<group>"; };
+		D97C547E2A8CBE9900A1C17C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizabless.strings; sourceTree = "<group>"; };
+		D97C547F2A8CBFB600A1C17C /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Strings+Generated.swift"; path = "../../SwiftgemStringsOutput/Strings+Generated.swift"; sourceTree = "<group>"; };
 		D9E434C42A41CCDB005A694B /* UITextViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewCell.h; sourceTree = "<group>"; };
 		D9E434C52A41CCDB005A694B /* UITextViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewCell.m; sourceTree = "<group>"; };
 		D9E434C62A41CCDB005A694B /* UIButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButtonCell.m; sourceTree = "<group>"; };
@@ -161,6 +165,7 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* HDViewController.h */,
 				6003F5A6195388D20070C39A /* HDViewController.m */,
+				D97C547F2A8CBFB600A1C17C /* Strings+Generated.swift */,
 				D9E434D12A41D26C005A694B /* HDENViewController.h */,
 				D9E434D02A41D26C005A694B /* HDENViewController.m */,
 				D9E434D42A41D58D005A694B /* HDExampleSwift.swift */,
@@ -181,6 +186,7 @@
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
 				6003F59B195388D20070C39A /* HDTranslateModule-Prefix.pch */,
+				D97C547D2A8CBE9500A1C17C /* Localizabless.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -252,6 +258,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				E63CC40A8D69A7039CF1472F /* [CP] Embed Pods Frameworks */,
+				D97C54792A8C9C5800A1C17C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -366,6 +373,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D97C54792A8C9C5800A1C17C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\n  echo \"hhhhhh\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
+		};
 		E63CC40A8D69A7039CF1472F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -413,6 +437,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D97C54802A8CBFB600A1C17C /* Strings+Generated.swift in Sources */,
 				D9E434D52A41D58D005A694B /* HDExampleSwift.swift in Sources */,
 				D9E434D22A41D26C005A694B /* HDENViewController.m in Sources */,
 				D9E434CD2A41CCDC005A694B /* UIButtonCell.m in Sources */,
@@ -469,6 +494,15 @@
 				D9FB6C332A49266200C28983 /* en */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D97C547D2A8CBE9500A1C17C /* Localizabless.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D97C547C2A8CBE9500A1C17C /* zh-Hans */,
+				D97C547E2A8CBE9900A1C17C /* en */,
+			);
+			name = Localizabless.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -560,6 +594,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "HDTranslateModule/HDTranslateModule_Example-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -580,6 +615,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "HDTranslateModule/HDTranslateModule_Example-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;

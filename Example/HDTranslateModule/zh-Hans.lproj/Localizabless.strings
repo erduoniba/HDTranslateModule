@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  HDTranslateModule
+
+  Created by denglibing on 2023/8/16.
+  Copyright © 2023 denglibing5. All rights reserved.
+*/
+
+"hello" = "你好";
+"good" = "很棒";

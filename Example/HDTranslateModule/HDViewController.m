@@ -8,6 +8,8 @@
 
 #import "HDViewController.h"
 
+#import "HDTranslateModule_Example-Swift.h"
+
 #import <HDTranslateModule/JDLTTranslateManager.h>
 #import <HDTranslateModule/JDLTAttributedString.h>
 
@@ -31,6 +33,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    HDExample *obj = [[HDExample alloc] init];
+    [obj log];
 
     _tableView.contentInset = UIEdgeInsetsMake(32, 0, 0, 0);
     [_tableView registerClass:UITableViewCell.class forCellReuseIdentifier:@"UITableViewCell"];

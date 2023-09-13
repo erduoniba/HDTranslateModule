@@ -4,6 +4,7 @@ platform :ios, '10.0'
 
 target 'HDTranslateModule_Example' do
   pod 'HDTranslateModule', :path => '../'
+  pod 'SwiftGen', '~> 6.0'
 
   target 'HDTranslateModule_Tests' do
     inherit! :search_paths
