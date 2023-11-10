@@ -31,16 +31,26 @@
     }];
 }
 
++ (void)load {
+    [JDLTTranslateModule openAutoTranslate];
+    NSString *bundlePath = [NSBundle.mainBundle pathForResource:@"HDTranslateDemo" ofType:@"bundle"];
+    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+    [JDLTTranslateManager.shared customTranslateBundle:bundle tableName:@"HDTranslateModule"];
+    [JDLTTranslateManager.shared updateLanguage:JDLTLanguageEN];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+    });
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [self logSystemLang];
     
-    [JDLTTranslateModule openAutoTranslate];
-    
-    NSString *bundlePath = [NSBundle.mainBundle pathForResource:@"HDTranslateDemo" ofType:@"bundle"];
-    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
-    [JDLTTranslateManager.shared customTranslateBundle:bundle tableName:@"HDTranslateModule"];
+//    [JDLTTranslateModule openAutoTranslate];
+//
+//    NSString *bundlePath = [NSBundle.mainBundle pathForResource:@"HDTranslateDemo" ofType:@"bundle"];
+//    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+//    [JDLTTranslateManager.shared customTranslateBundle:bundle tableName:@"HDTranslateModule"];
     
     // 测试info.plist
     [self reqPhotoAuthorization];

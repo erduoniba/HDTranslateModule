@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		056CFE49185D00784361493D /* Pods_HDTranslateModule_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36FA6CB73D122F4A55B4D533 /* Pods_HDTranslateModule_Example.framework */; };
+		524931444468C37C1F2D4E50 /* Pods_HDTranslateModule_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70199271F50EDB8E3B443FE2 /* Pods_HDTranslateModule_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -23,7 +23,6 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		C32258C35E1794BDF5215EFD /* Pods_HDTranslateModule_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB2FD7C27CB3D916B55E905 /* Pods_HDTranslateModule_Tests.framework */; };
 		D97C54802A8CBFB600A1C17C /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97C547F2A8CBFB600A1C17C /* Strings+Generated.swift */; };
 		D9E434CC2A41CCDC005A694B /* UITextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E434C52A41CCDB005A694B /* UITextViewCell.m */; };
 		D9E434CD2A41CCDC005A694B /* UIButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E434C62A41CCDB005A694B /* UIButtonCell.m */; };
@@ -32,6 +31,7 @@
 		D9E434D22A41D26C005A694B /* HDENViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E434D02A41D26C005A694B /* HDENViewController.m */; };
 		D9E434D52A41D58D005A694B /* HDExampleSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E434D42A41D58D005A694B /* HDExampleSwift.swift */; };
 		D9FB6C362A497A2600C28983 /* HDTranslateDemo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D9FB6C352A497A2500C28983 /* HDTranslateDemo.bundle */; };
+		FBACF98F5B4877FFB7D1A32D /* Pods_HDTranslateModule_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 173105429A2F4DFF6630BEF4 /* Pods_HDTranslateModule_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		36FA6CB73D122F4A55B4D533 /* Pods_HDTranslateModule_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HDTranslateModule_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		173105429A2F4DFF6630BEF4 /* Pods_HDTranslateModule_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HDTranslateModule_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* HDTranslateModule_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDTranslateModule_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,6 +66,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6BBDDC2B551070A65DE6DE68 /* HDTranslateModule.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HDTranslateModule.podspec; path = ../HDTranslateModule.podspec; sourceTree = "<group>"; };
+		70199271F50EDB8E3B443FE2 /* Pods_HDTranslateModule_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HDTranslateModule_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		767C70C9A11CA7FCCEF88FCE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		84F9A1386DB15F91E4FD0258 /* Pods-HDTranslateModule_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDTranslateModule_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HDTranslateModule_Tests/Pods-HDTranslateModule_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -73,7 +74,6 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B8C56687B09470063925F54A /* Pods-HDTranslateModule_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDTranslateModule_Example.release.xcconfig"; path = "Target Support Files/Pods-HDTranslateModule_Example/Pods-HDTranslateModule_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BC884C9533366CF61BE19D15 /* Pods-HDTranslateModule_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDTranslateModule_Example.debug.xcconfig"; path = "Target Support Files/Pods-HDTranslateModule_Example/Pods-HDTranslateModule_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		CFB2FD7C27CB3D916B55E905 /* Pods_HDTranslateModule_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HDTranslateModule_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D22864852C780F2CD2D70ADC /* Pods-HDTranslateModule_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDTranslateModule_Tests.release.xcconfig"; path = "Target Support Files/Pods-HDTranslateModule_Tests/Pods-HDTranslateModule_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D97C547C2A8CBE9500A1C17C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizabless.strings"; sourceTree = "<group>"; };
 		D97C547E2A8CBE9900A1C17C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizabless.strings; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				056CFE49185D00784361493D /* Pods_HDTranslateModule_Example.framework in Frameworks */,
+				FBACF98F5B4877FFB7D1A32D /* Pods_HDTranslateModule_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +115,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				C32258C35E1794BDF5215EFD /* Pods_HDTranslateModule_Tests.framework in Frameworks */,
+				524931444468C37C1F2D4E50 /* Pods_HDTranslateModule_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,8 +150,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				36FA6CB73D122F4A55B4D533 /* Pods_HDTranslateModule_Example.framework */,
-				CFB2FD7C27CB3D916B55E905 /* Pods_HDTranslateModule_Tests.framework */,
+				173105429A2F4DFF6630BEF4 /* Pods_HDTranslateModule_Example.framework */,
+				70199271F50EDB8E3B443FE2 /* Pods_HDTranslateModule_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -257,8 +257,8 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				E63CC40A8D69A7039CF1472F /* [CP] Embed Pods Frameworks */,
 				D97C54792A8C9C5800A1C17C /* ShellScript */,
+				F48F6DAF77A78A0925F49D59 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -390,7 +390,7 @@
 			shellPath = /bin/sh;
 			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\n  echo \"hhhhhh\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
 		};
-		E63CC40A8D69A7039CF1472F /* [CP] Embed Pods Frameworks */ = {
+		F48F6DAF77A78A0925F49D59 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (

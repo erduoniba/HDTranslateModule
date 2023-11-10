@@ -1892,6 +1892,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 ## 七、问题补充
 
+#### 问题一：如何查看编译后包的语言包？
+
 1、编译后（本地build的及AppStore上的）的 ipa 文件中的 `InfoPlist.strings` 文件乱码，无法查看原始数据。
 
 **分析：**该 `InfoPlist.strings` 文件是二进制属性列表（binary property list）格式，这是编译后的格式。当你在Xcode中编译项目时，文本格式的`InfoPlist.strings`文件会被转换成二进制格式以优化性能和减小文件大小。
@@ -1985,3 +1987,33 @@ mm.xml               translate_strings.py
 # mmOrigin.strings：源码strings文件
 ```
 
+
+
+#### 问题二：如果检查 .strings 内容是否存在问题？
+
+如何文件内容格式不对，那么在编译运行是国际化会无效，这里需要留意 Xcode 的日志信息，会提示到具体哪一行格式不对，坑人的地方是 Xcode 只会一次提示最近的一个错误，如果有多个错误，则多次编译运行浪费大量时间，类似下面：
+
+```sh
+*** Exception parsing ASCII property list: NSParseErrorException Error Domain=NSCocoaErrorDomain Code=3840 "Unexpected character " at line 1" UserInfo={NSDebugDescription=Unexpected character " at line 1, kCFPropertyListOldStyleParsingError=Error Domain=NSCocoaErrorDomain Code=3840 "Expected ';' or '=' after key at line 2491" UserInfo={NSDebugDescription=Expected ';' or '=' after key at line 2491}}
+```
+
+第一种：**plutil 工具**
+
+1、终端进入 Localizable.strings 所在的目录，因为是支持多国语言所以会有多个 Localizable.strings 文件，比如在 en.lproj/ 目录下或者zh-Hans.lproj 目录下。
+2、输入`plutil -lint Localizable.strings`
+ 如果文档格式正确会出现
+ `Localizable.strings: OK`
+ 否则出错一般会出现
+ `tcdeMacBook-Pro en.lproj % plutil Localizable.strings Localizable.strings: Unexpected character " at line 1`
+ 这种方法不太好用，他总是报这个错 其实错误是在其它行。推荐第二种方法
+
+第二种：**pl**
+
+1、和上面一样，先进入对应目录下
+2、输入 `pl < Localizable.strings` 会定位到准确的某一行
+
+```
+*** Exception parsing ASCII property list: NSParseErrorException Error Domain=NSCocoaErrorDomain Code=3840 "Unexpected character " at line 1" UserInfo={NSDebugDescription=Unexpected character " at line 1, kCFPropertyListOldStyleParsingError=Error Domain=NSCocoaErrorDomain Code=3840 "Expected ';' or '=' after key at line 2491" UserInfo={NSDebugDescription=Expected ';' or '=' after key at line 2491}}
+```
+
+譬如我这里的 2491 行有误，修改之后继续执行，直到没有错误提示为止。

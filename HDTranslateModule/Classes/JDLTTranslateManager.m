@@ -44,7 +44,12 @@
 - (void)customTranslateBundle:(NSBundle *)bundle tableName:(NSString *)tableName {
     if (bundle) {
         _jdltTranslateModuleBundle = bundle;
+        [_jdltTranslateModuleBundle load];
         _tableName = tableName;
+        
+        // 切换语言模式，需要重制一次语言模型路径
+        _lprojPath = nil;
+        [self lprojPath];
     }
 }
 
@@ -98,8 +103,9 @@
 
 
 + (NSString *)translateText:(NSString *)text {
-    NSString *translate = [[NSBundle bundleWithPath:JDLTTranslateManager.shared.lprojPath] localizedStringForKey:text value:nil table:JDLTTranslateManager.shared.tableName];
-//    NSLog(@"translate: %@", translate);
+    NSBundle *bundle = [NSBundle bundleWithPath:JDLTTranslateManager.shared.lprojPath];
+    NSString *tableName = JDLTTranslateManager.shared.tableName;
+    NSString *translate = [bundle localizedStringForKey:text value:nil table:tableName];
     return translate;
 }
 
