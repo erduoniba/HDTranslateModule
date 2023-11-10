@@ -1887,3 +1887,43 @@ NS_ASSUME_NONNULL_BEGIN
 
 [Google机器翻译](https://developers.google.com/ml-kit/language/translation?hl=zh-cn)
 
+
+
+
+
+## 七、问题补充
+
+1、编译后（本地build的及AppStore上的）的 ipa 文件中的 `InfoPlist.strings` 文件乱码，无法查看原始数据。
+
+**分析：**该 `InfoPlist.strings` 文件是二进制属性列表（binary property list）格式，这是编译后的格式。当你在Xcode中编译项目时，文本格式的`InfoPlist.strings`文件会被转换成二进制格式以优化性能和减小文件大小。
+
+数据如下：
+
+```
+bplist00“_CFBundleDisplayName_NSPhotoLibraryUsageDescriptione H DYãÌä oó âÅãøïÓ`®vÑv¯Qåˇ^&`®OSöåbkx0bÕdD0bk~¢S0[ûfoç-ri{I
+#DO                            ä
+```
+
+源码对应的数据如下：
+
+```yaml
+CFBundleDisplayName="HD多语言";
+
+NSPhotoLibraryUsageDescription="需要访问您的相册，带您体验扫码、拍摄、扫红包、实景购物等";
+```
+
+**解决：**二进制属性列表（binary property list）是一种特殊的格式，它以二进制形式存储数据，以便快速被系统读取和解析。在你提供的编译后的数据中，`bplist00` 是二进制属性列表的文件头，表明这是一个二进制plist文件。
+
+如果你需要查看或编辑编译后的`InfoPlist.strings`文件，你需要将其转换回文本格式。你可以使用 `plutil` 命令行工具，它是苹果提供的用于管理属性列表文件的工具。例如，你可以使用以下命令将二进制plist文件转换为XML格式：
+
+```bash
+plutil -convert xml1 InfoPlist.strings -o InfoPlist.xml
+```
+
+然后，你可以使用任何文本编辑器打开`InfoPlist.xml`文件进行查看或编辑。如果需要将其转换回二进制格式，可以使用以下命令：
+
+```bash
+plutil -convert binary1 InfoPlist.xml -o InfoPlist.strings
+```
+
+请注意，通常你不需要手动编辑编译后的`InfoPlist.strings`文件，因为所有的编辑都应该在项目源代码中完成，然后通过编译过程自动转换。
