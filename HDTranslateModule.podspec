@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/erduoniba/HDTranslateModule'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'denglibing' => '328418417@qq.com' }
-  s.source           = { :git => 'https://github.com/erduoniba/HDTranslateModule.git', :tag => s.version.to_s }
+  s.source           = { :git => 'git@github.com:erduoniba/HDTranslateModule.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
   s.source_files = 'HDTranslateModule/Classes/**/*.{h,m,py}'
