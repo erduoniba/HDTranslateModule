@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HDTranslateModule: f5d428c84c75be4cc0c9440b8d23d832feec41da
+  HDTranslateModule: f78847bc1fe1805e3edba5abcbf2ec051eb83e69
   SwiftGen: 1366a7f71aeef49954ca5a63ba4bef6b0f24138c
 
 PODFILE CHECKSUM: 1754188ee48cc9b8d6c53ac0b7b6a3d3697da986

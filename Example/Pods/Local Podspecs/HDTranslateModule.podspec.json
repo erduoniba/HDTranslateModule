@@ -12,7 +12,7 @@
     "denglibing": "328418417@qq.com"
   },
   "source": {
-    "git": "https://github.com/erduoniba/HDTranslateModule.git",
+    "git": "git@github.com:erduoniba/HDTranslateModule.git",
     "tag": "0.1.0"
   },
   "platforms": {
