@@ -1892,3 +1892,96 @@ NS_ASSUME_NONNULL_BEGIN
 
 ## 七、问题补充
 
+1、编译后（本地build的及AppStore上的）的 ipa 文件中的 `InfoPlist.strings` 文件乱码，无法查看原始数据。
+
+**分析：**该 `InfoPlist.strings` 文件是二进制属性列表（binary property list）格式，这是编译后的格式。当你在Xcode中编译项目时，文本格式的`InfoPlist.strings`文件会被转换成二进制格式以优化性能和减小文件大小。
+
+数据如下：
+
+```yaml
+bplist00“____ CFBundleDisplayName_ NSPhotoLibraryUsageDescriptione
+```
+
+源码对应的数据如下：
+
+```yaml
+CFBundleDisplayName="HD多语言";
+
+NSPhotoLibraryUsageDescription="需要访问您的相册，带您体验扫码、拍摄、扫红包、实景购物等";
+```
+
+**解决：**二进制属性列表（binary property list）是一种特殊的格式，它以二进制形式存储数据，以便快速被系统读取和解析。在你提供的编译后的数据中，`bplist00` 是二进制属性列表的文件头，表明这是一个二进制plist文件。
+
+如果你需要查看或编辑编译后的`InfoPlist.strings`文件，你需要将其转换回文本格式。你可以使用 `plutil` 命令行工具，它是苹果提供的用于管理属性列表文件的工具。例如，你可以使用以下命令将二进制plist文件转换为XML格式：
+
+```bash
+plutil -convert xml1 InfoPlist.strings -o InfoPlist.xml
+```
+
+然后，你可以使用任何文本编辑器打开`InfoPlist.xml`文件进行查看或编辑。如果需要将其转换回二进制格式，可以使用以下命令：
+
+```bash
+plutil -convert binary1 InfoPlist.xml -o InfoPlist.strings
+```
+
+请注意，通常你不需要手动编辑编译后的`InfoPlist.strings`文件，因为所有的编辑都应该在项目源代码中完成，然后通过编译过程自动转换。
+
+完整方案：
+
+`translate_strings.py` 代码，用于将二进制 strings 文件转成 xml 文件，然后编码还原成原始的 strings：
+
+```python
+import xml.etree.ElementTree as ET
+import subprocess
+
+# xml 转成 原始的 .strings 文件
+def convert_plist_to_strings(plist_path, strings_path):
+    # 解析XML文件
+    tree = ET.parse(plist_path)
+    root = tree.getroot()
+
+    # 打开一个新的.strings文件用于写入
+    with open(strings_path, 'w', encoding='utf-8') as strings_file:
+        # plist文件的结构通常包含一个顶层的<dict>元素
+        dict_elements = root.findall('dict')
+        for dict_element in dict_elements:
+            # 遍历dict内的元素
+            elements = list(dict_element)
+            for i, element in enumerate(elements):
+                if element.tag == 'key':
+                    key_text = element.text
+                    # 获取与key相邻的下一个string元素
+                    if i+1 < len(elements) and elements[i+1].tag == 'string':
+                        value_text = elements[i+1].text
+                        # 写入转换后的键值对到.strings文件
+                        strings_file.write(f'"{key_text}" = "{value_text}";\n')
+
+def covert_strings_to_plist(strings_path, plist_path):
+    # 使用 f-string 格式化命令
+    command = f"plutil -convert xml1 {strings_path} -o {plist_path}"
+
+    # 执行命令
+    subprocess.run(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+
+# 调用函数进行转换
+covert_strings_to_plist('mm.strings', 'mm.xml')
+convert_plist_to_strings('mm.xml', 'mmOrigin.strings')
+
+print('转换完成。')
+```
+
+使用：
+
+```sh
+➜ ls
+mm.strings           translate_strings.py
+➜ python3 translate_strings.py
+转换完成。
+➜ ls
+mm.strings           mmOrigin.strings
+mm.xml               translate_strings.py
+
+# mm.xml；为原始的数据，使用plist格式
+# mmOrigin.strings：源码strings文件
+```
+
