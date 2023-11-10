@@ -1890,7 +1890,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-
 ## 七、问题补充
 
 1、编译后（本地build的及AppStore上的）的 ipa 文件中的 `InfoPlist.strings` 文件乱码，无法查看原始数据。
@@ -1899,7 +1898,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 数据如下：
 
-```
+```yaml
 bplist00“_CFBundleDisplayName_NSPhotoLibraryUsageDescriptione H DYãÌä oó âÅãøïÓ`®vÑv¯Qåˇ^&`®OSöåbkx0bÕdD0bk~¢S0[ûfoç-ri{I
 #DO                            ä
 ```
