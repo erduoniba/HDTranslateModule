@@ -15,6 +15,7 @@
 			dependencies = (
 			);
 			name = SwiftGen;
+			productName = SwiftGen;
 		};
 /* End PBXAggregateTarget section */
 
@@ -70,7 +71,7 @@
 		00E2393D2190B66DEDE6F61EB63ACC91 /* Pods-HDTranslateModule_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HDTranslateModule_Tests-umbrella.h"; sourceTree = "<group>"; };
 		01FA164C72588D1D551524070C67EA1B /* HDTranslateModule-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HDTranslateModule-umbrella.h"; sourceTree = "<group>"; };
 		0314A1D96B884C21DEC5B467944EBFBB /* Pods-HDTranslateModule_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-HDTranslateModule_Tests"; path = Pods_HDTranslateModule_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A596B3E6EA876300E56111F30C4F701 /* HDTranslateModule.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HDTranslateModule.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0A596B3E6EA876300E56111F30C4F701 /* HDTranslateModule.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = HDTranslateModule.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		0D39FFD1790EA125DE1B12C17B60AAA7 /* Pods-HDTranslateModule_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HDTranslateModule_Example.modulemap"; sourceTree = "<group>"; };
 		0E5920638CED823B760B8CCDBCC6ECF1 /* JDLTAttributedString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JDLTAttributedString.m; path = HDTranslateModule/Classes/JDLTAttributedString.m; sourceTree = "<group>"; };
 		109903A4B5CD07D612295777C357B672 /* JDLTTranslateHook.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JDLTTranslateHook.m; path = HDTranslateModule/Classes/JDLTTranslateHook.m; sourceTree = "<group>"; };
@@ -81,8 +82,8 @@
 		22E769C0A42C1B6869AF10A0C145C6B6 /* Pods-HDTranslateModule_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HDTranslateModule_Tests-dummy.m"; sourceTree = "<group>"; };
 		22F7B5667A9AABAFA317988A0273CDC4 /* Pods-HDTranslateModule_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HDTranslateModule_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		347F22D588B9BB8A757AAED8907DD601 /* HDTranslateModule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HDTranslateModule.modulemap; sourceTree = "<group>"; };
-		459146147956CD74B32F56E06078F23D /* find_chinese_ustrings.py */ = {isa = PBXFileReference; includeInIndex = 1; path = find_chinese_ustrings.py; sourceTree = "<group>"; };
-		475B97DC704543FF7D0FB1D785E6DF88 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		459146147956CD74B32F56E06078F23D /* find_chinese_ustrings.py */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.python; path = find_chinese_ustrings.py; sourceTree = "<group>"; };
+		475B97DC704543FF7D0FB1D785E6DF88 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		47B0B25559F8E34A4E97B39C7B944573 /* Pods-HDTranslateModule_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HDTranslateModule_Example-dummy.m"; sourceTree = "<group>"; };
 		5AEABB6F463028FC8534F3404AB9C238 /* Pods-HDTranslateModule_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HDTranslateModule_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		5EB336E7894167D87BE590D8A1FAC7D6 /* JDLTTranslateManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JDLTTranslateManager.m; path = HDTranslateModule/Classes/JDLTTranslateManager.m; sourceTree = "<group>"; };
@@ -91,10 +92,10 @@
 		79318D1DA1515436DC2A8594289B7E08 /* HDTranslateModule */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HDTranslateModule; path = HDTranslateModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EEF3947CC99F5F676132A09F97D7B7F /* HDTranslateModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HDTranslateModule.debug.xcconfig; sourceTree = "<group>"; };
 		93611DB69F263CEF0E5AC13B1EB74DCA /* Pods-HDTranslateModule_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HDTranslateModule_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A18A1FFA580C279D14187F4411199171 /* JDLTTranslateModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JDLTTranslateModule.m; path = HDTranslateModule/Classes/JDLTTranslateModule.m; sourceTree = "<group>"; };
 		A2ADAEB10561D453645558591CCF12A9 /* Pods-HDTranslateModule_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HDTranslateModule_Example-frameworks.sh"; sourceTree = "<group>"; };
-		AB79289ED1B022171A1CD0721A076E95 /* translate_strings.py */ = {isa = PBXFileReference; includeInIndex = 1; path = translate_strings.py; sourceTree = "<group>"; };
+		AB79289ED1B022171A1CD0721A076E95 /* translate_strings.py */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.python; path = translate_strings.py; sourceTree = "<group>"; };
 		ACCA4E53EFB1FA2B0C98F9FDEB528A28 /* Pods-HDTranslateModule_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HDTranslateModule_Tests.modulemap"; sourceTree = "<group>"; };
 		B172204B49DDDD7BD5BDC3500F6E3E24 /* JDLTAttributedString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JDLTAttributedString.h; path = HDTranslateModule/Classes/JDLTAttributedString.h; sourceTree = "<group>"; };
 		B1F0F2C13B78A16199C681CD4DBEE35B /* JDLTTranslateHook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JDLTTranslateHook.h; path = HDTranslateModule/Classes/JDLTTranslateHook.h; sourceTree = "<group>"; };
@@ -106,10 +107,10 @@
 		CA817BB34C66760CA21E0D59E4B9EA62 /* Pods-HDTranslateModule_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HDTranslateModule_Example-umbrella.h"; sourceTree = "<group>"; };
 		D9D53EB7D325FBCE5CB31D5E4A4A568B /* JDLTTranslateManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JDLTTranslateManager.h; path = HDTranslateModule/Classes/JDLTTranslateManager.h; sourceTree = "<group>"; };
 		E408905B81A8E60CF8DFB995E3FB9672 /* Pods-HDTranslateModule_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HDTranslateModule_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E70EFBCA8F016AD125097D940BA043B7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E70EFBCA8F016AD125097D940BA043B7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ED243BE4CD9823494B954DC8AC7790B8 /* Pods-HDTranslateModule_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HDTranslateModule_Tests-Info.plist"; sourceTree = "<group>"; };
 		EDB17370F5A726AD716DB99D3A7AE68C /* Pods-HDTranslateModule_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HDTranslateModule_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F47D63BE0445D65698D7F717A5E5A39C /* find_chinese_cstrings.py */ = {isa = PBXFileReference; includeInIndex = 1; path = find_chinese_cstrings.py; sourceTree = "<group>"; };
+		F47D63BE0445D65698D7F717A5E5A39C /* find_chinese_cstrings.py */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.python; path = find_chinese_cstrings.py; sourceTree = "<group>"; };
 		F667E69220F829F216437A095C7DDCD5 /* HDTranslateModule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HDTranslateModule-Info.plist"; sourceTree = "<group>"; };
 		FBDB61EA4DAC38C3E4C253AF6A61DB89 /* Pods-HDTranslateModule_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HDTranslateModule_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		FD691AE7128F940D3B179941FCEC2F54 /* SwiftGen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftGen.debug.xcconfig; sourceTree = "<group>"; };
@@ -206,7 +207,6 @@
 			children = (
 				AB4F699EB2CE4C63CBA1FEFDD0861DAA /* Support Files */,
 			);
-			name = SwiftGen;
 			path = SwiftGen;
 			sourceTree = "<group>";
 		};
@@ -652,8 +652,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
