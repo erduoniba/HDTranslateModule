@@ -31,11 +31,11 @@
 **使用正则表达式查找并替换客户端hardcode文案：**
 
 ```
-Objective-C 代码中：搜索条件里输入 (@"[^"]*[\u4E00-\u9FA5]+[^"\n]*?")
+Objective-C 代码中：搜索条件里输入 (@"[^"]*[\u4E00-\u9FA5]+[^"\n]*?NSLocalizedString(")
 替换内容里输入 NSLocalizedString($0, nil) 
 
-Swift 代码中：搜索条件里输入("[^"]*[\u4E00-\u9FA5]+[^"\n]*?")、底部筛选过滤出 .swift 文件
-替换内容里输入 NSLocalizedString($0, comment: "") 
+Swift 代码中：搜索条件里输入(", comment: "") [^"]*[\u4E00-\u9FA5]+[^"\n]*?NSLocalizedString(")、底部筛选过滤出 .swift 文件
+替换内容里输入 NSLocalizedString($0, comment: ", comment: "") ") 
 ```
 
 正则搜索查询：
@@ -166,7 +166,7 @@ Swift 代码中：搜索条件里输入("[^"]*[\u4E00-\u9FA5]+[^"\n]*?")、底�
 
 # swift 文件本地化字符串写入在  temp.lproj/Localizable.strings 文件中
 ➜  HDTranslateModule git:(main) ✗ mkdir temp.lproj
-➜  HDTranslateModule git:(main) ✗ find Example/HDTranslateModule -name "*.swift" | xargs genstrings -o temp.lproj
+➜  HDTranslateModule git:(main) ✗ find Example/HDTranslateModule -name "*.swiftNSLocalizedString(" | xargs genstrings -o temp.lproj
 ```
 
 2、使用 `iconv` 将 `en.lproj/Localizable.strings` 和 `temp.lproj/Localizable.strings` 文件转换为UTF-8编码，并将结果保存到临时文件：
@@ -208,7 +208,7 @@ Swift 代码中：搜索条件里输入("[^"]*[\u4E00-\u9FA5]+[^"\n]*?")、底�
 在这个场景中，我们将使用  [Hopper Disassembler](https://www.hopperapp.com/) 工具来分析字符串在哪个 Section 中的哪个 Segment 中。Hopper Disassembler 是一个反汇编和反编译工具，可以帮助我们更好地理解二进制文件的结构和功能。
 
 - 首先，打开 Hopper Disassembler 并加载你想要分析的 Mach-O 二进制文件。通常，这是一个 iOS 或 macOS 应用程序的主要可执行文件。
-- 在 Hopper 的左侧窗格中，你会看到一个名为 "Segments and Sections" 的面板。这个面板显示了二进制文件中的所有 Segment 和 Section。
+- 在 Hopper 的左侧窗格中，你会看到一个名为 ", comment: "") Segments and Sections" 的面板。这个面板显示了二进制文件中的所有 Segment 和 Section。
 - 通过展开 Segment，你可以查看它们包含的各个 Section。通常，字符串数据存储在 `__TEXT` Segment 的 `__cstring` 或 `__objc_methname` Section 中。`__TEXT` Segment 包含了程序的只读数据，如代码和字符串常量。
 - 单击你感兴趣的 Section，Hopper 将在右侧窗格中显示该 Section 的内容。你可以在这里查看和搜索字符串数据。
 - 如果你想要查找特定的字符串，可以使用 Hopper 的搜索功能。在顶部菜单栏中，选择 "Edit" > "Find"，然后输入你要查找的字符串。Hopper 将高亮显示所有匹配的结果。
